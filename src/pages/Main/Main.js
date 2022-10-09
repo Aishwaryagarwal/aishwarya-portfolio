@@ -15,13 +15,13 @@ function Main() {
             <Landing />
             <About />
             <Education />
-            <Skills />
             <Experience />
             <Projects />
-            <Achievement />
+            <Skills />
+            {/* <Achievement />
             <Services />
             <Testimonials />
-            <Blog />
+            <Blog /> */}
             <Contacts />
             <Footer />
         </div>

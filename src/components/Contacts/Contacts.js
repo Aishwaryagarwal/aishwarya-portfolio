@@ -292,17 +292,19 @@ function Contacts() {
                                 {contactsData.email}
                             </p>
                         </a>
-                        <a
-                            href={`tel:${contactsData.phone}`}
-                            className='personal-details'
-                        >
-                            <div className={classes.detailsIcon}>
-                                <FiPhone />
-                            </div>
-                            <p style={{ color: theme.tertiary }}>
-                                {contactsData.phone}
-                            </p>
-                        </a>
+                        {contactsData.phone ?
+                            <a
+                                href={`tel:${contactsData.phone}`}
+                                className='personal-details'
+                            >
+                                <div className={classes.detailsIcon}>
+                                    <FiPhone />
+                                </div>
+                                <p style={{ color: theme.tertiary }}>
+                                    {contactsData.phone}
+                                </p>
+                            </a>
+                        : null}
                         <div className='personal-details'>
                             <div className={classes.detailsIcon}>
                                 <HiOutlineLocationMarker />
